@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3CD095424C150ED006D62EF /* MainExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CD095224C150ED006D62EF /* MainExporter.swift */; };
+		D3CD095524C150ED006D62EF /* PlistArgumentsReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CD095324C150ED006D62EF /* PlistArgumentsReader.swift */; };
+		D3CD095724C15100006D62EF /* SelectableModeExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CD095624C15100006D62EF /* SelectableModeExporter.swift */; };
 		E1321E502229A71600046C00 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1321E4F2229A71600046C00 /* StopWatch.swift */; };
 		E186D26022354098000BFCED /* FlatFolderDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186D25F22354098000BFCED /* FlatFolderDescriptor.swift */; };
 		E1A55240222AB2EF00F72499 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A5523F222AB2EF00F72499 /* String+extensions.swift */; };
@@ -17,13 +20,16 @@
 		E1E43B13217CDB54000E76DF /* MediaLibUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E43B0B217CDB53000E76DF /* MediaLibUtil.swift */; };
 		E1E43B1C217CDBE9000E76DF /* PhotosExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E43B17217CDB6A000E76DF /* PhotosExporter.swift */; };
 		E1E43B1D217CDBE9000E76DF /* SnapshotPhotosExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E43B18217CDB6E000E76DF /* SnapshotPhotosExporter.swift */; };
-		E1E43B43217CE0A9000E76DF /* MainExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E43B42217CE0A9000E76DF /* MainExporter.swift */; };
 		E1E43B46217CE0C8000E76DF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E43B44217CE0C8000E76DF /* Logger.swift */; };
 		E1E43B63217CE16D000E76DF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E43B62217CE16D000E76DF /* MainMenu.xib */; };
 		E1E43B65217CE1A0000E76DF /* filesystem-structure.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E43B64217CE1A0000E76DF /* filesystem-structure.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3CD095224C150ED006D62EF /* MainExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainExporter.swift; sourceTree = "<group>"; };
+		D3CD095324C150ED006D62EF /* PlistArgumentsReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistArgumentsReader.swift; sourceTree = "<group>"; };
+		D3CD095624C15100006D62EF /* SelectableModeExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableModeExporter.swift; sourceTree = "<group>"; };
+		D3CD095824C15190006D62EF /* SampleReference.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SampleReference.plist; sourceTree = "<group>"; };
 		E1321E4F2229A71600046C00 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		E186D25F22354098000BFCED /* FlatFolderDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatFolderDescriptor.swift; sourceTree = "<group>"; };
 		E1A5523F222AB2EF00F72499 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
@@ -38,7 +44,6 @@
 		E1E43B17217CDB6A000E76DF /* PhotosExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosExporter.swift; sourceTree = "<group>"; };
 		E1E43B18217CDB6E000E76DF /* SnapshotPhotosExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotPhotosExporter.swift; sourceTree = "<group>"; };
 		E1E43B39217CDC73000E76DF /* PhotosExporter.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = PhotosExporter.entitlements; sourceTree = "<group>"; };
-		E1E43B42217CE0A9000E76DF /* MainExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainExporter.swift; sourceTree = "<group>"; };
 		E1E43B44217CE0C8000E76DF /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E1E43B62217CE16D000E76DF /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		E1E43B64217CE1A0000E76DF /* filesystem-structure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filesystem-structure.png"; sourceTree = "<group>"; };
@@ -76,11 +81,13 @@
 		E1E43AF4217CDABA000E76DF /* PhotosExporter */ = {
 			isa = PBXGroup;
 			children = (
-				E1E43B42217CE0A9000E76DF /* MainExporter.swift */,
 				E1E43AF5217CDABA000E76DF /* AppDelegate.swift */,
+				D3CD095224C150ED006D62EF /* MainExporter.swift */,
+				D3CD095324C150ED006D62EF /* PlistArgumentsReader.swift */,
 				E1E43B16217CDB62000E76DF /* exporter */,
 				E1E43B19217CDB8C000E76DF /* util */,
 				E1E43AFC217CDABA000E76DF /* Info.plist */,
+				D3CD095824C15190006D62EF /* SampleReference.plist */,
 				E1E43B62217CE16D000E76DF /* MainMenu.xib */,
 				E1E43B39217CDC73000E76DF /* PhotosExporter.entitlements */,
 			);
@@ -90,6 +97,7 @@
 		E1E43B16217CDB62000E76DF /* exporter */ = {
 			isa = PBXGroup;
 			children = (
+				D3CD095624C15100006D62EF /* SelectableModeExporter.swift */,
 				E1E43B17217CDB6A000E76DF /* PhotosExporter.swift */,
 				E1E43B18217CDB6E000E76DF /* SnapshotPhotosExporter.swift */,
 				E1E43B09217CDB53000E76DF /* IncrementalPhotosExporter.swift */,
@@ -146,7 +154,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Andreas Bentele";
 				TargetAttributes = {
 					E1E43AF1217CDABA000E76DF = {
@@ -195,10 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1E43B43217CE0A9000E76DF /* MainExporter.swift in Sources */,
 				E1E43B1C217CDBE9000E76DF /* PhotosExporter.swift in Sources */,
+				D3CD095724C15100006D62EF /* SelectableModeExporter.swift in Sources */,
 				E1321E502229A71600046C00 /* StopWatch.swift in Sources */,
 				E1E43B1D217CDBE9000E76DF /* SnapshotPhotosExporter.swift in Sources */,
+				D3CD095424C150ED006D62EF /* MainExporter.swift in Sources */,
 				E1B119262251DC8100B53693 /* Errors.swift in Sources */,
 				E1A55240222AB2EF00F72499 /* String+extensions.swift in Sources */,
 				E1E43AF6217CDABA000E76DF /* AppDelegate.swift in Sources */,
@@ -206,6 +215,7 @@
 				E186D26022354098000BFCED /* FlatFolderDescriptor.swift in Sources */,
 				E1E43B11217CDB54000E76DF /* IncrementalPhotosExporter.swift in Sources */,
 				E1E43B10217CDB54000E76DF /* MetadataLoader.swift in Sources */,
+				D3CD095524C150ED006D62EF /* PlistArgumentsReader.swift in Sources */,
 				E1E43B46217CE0C8000E76DF /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -319,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -332,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = PhotosExporter/Info.plist;
@@ -349,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = PhotosExporter/Info.plist;
